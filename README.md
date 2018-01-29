@@ -23,9 +23,9 @@ Documentation is a class with two optional fields
 case class ItemOptDoc(name: String, documentation: Option[Documentation])
 ```
 
-An ItemOptDoc have a name and possible a Documentation. An ItemOptDoc have a name and possible a Documentation. **This was made that way to allow the encoded json to support null documentation key and reduce payload.**
+An ItemOptDoc have a name and possibly a Documentation. **This was made that way to allow the encoded json to support null documentation key and reduce payload.**
 
-And the encoders something like this:
+And the encoders are something like this:
 
 ```scala
 implicit val docEncoder = deriveEncoder[Documentation]
@@ -33,7 +33,7 @@ implicit val docEncoder = deriveEncoder[Documentation]
 implicit val itemOptEncoder = deriveEncoder[ItemOptDoc]
 ```
 
-But this means that now I have **one extra complexity and two ways to represent a empty object in scala.** It makes the code more complex because of a json representation.
+But this means that now I have **one extra complexity and two ways to represent a empty Document object in scala.** It makes the code more complex because of the JSON encoding. 
 
 ```scala
 /**
