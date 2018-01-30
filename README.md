@@ -39,9 +39,9 @@ But this means that now I have **one extra complexity and two ways to represent 
 /**
 * Bouth represents empty Documentation
 **/
-ItemOpt("item 1", None)
+ItemOptDoc("item 1", None)
 
-ItemOpt("item 1", Some(Documentation()))
+ItemOptDoc("item 1", Some(Documentation()))
 ```
 
 So, the simpler (and probably best) way the make it in Scala is to declare item like this, **without an optional field...**
