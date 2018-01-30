@@ -33,7 +33,7 @@ implicit val docEncoder = deriveEncoder[Documentation]
 implicit val itemOptEncoder = deriveEncoder[ItemOptDoc]
 ```
 
-But this means that now I have **one extra complexity and two ways to represent a empty Document object in scala.** It makes the code more complex because of the JSON encoding. 
+But this means that now I have **one extra complexity and two ways to represent a empty Documentation object in scala.** It makes the code more complex because of the JSON encoding. 
 
 ```scala
 /**
