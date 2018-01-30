@@ -118,7 +118,7 @@ The produced result:
 }
 ```
 
-Using it in conjuction withthe io.circe.Printer option of dropNullValues = true we have the final output to the item 1 bellow:
+Using it in conjuction with the io.circe.Printer option of dropNullValues = true we have the final output to the item 1 bellow:
 
 ```json
 {
@@ -126,8 +126,8 @@ Using it in conjuction withthe io.circe.Printer option of dropNullValues = true 
 }
 ```
 
-Making a huge difference on a possible endpoint that returns thousands of items.
+Making a huge difference on a possible endpoint that returns thousands of items, reducing payload an saving memory.
 
-Please see the Scaladoc on EmptyAwareEncoder to see all the usage possibilities.
+Please see the Scaladoc on EmptyAwareEncoder to see all the usage possibilities
 
 
