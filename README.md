@@ -37,7 +37,7 @@ But this means that now I have **one extra complexity and two ways to represent 
 
 ```scala
 /**
-* Bouth represents empty Documentation
+* Bouth represent empty Documentation
 **/
 ItemOptDoc("item 1", None)
 
