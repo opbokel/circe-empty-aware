@@ -118,7 +118,7 @@ The produced result:
 }
 ```
 
-Using it in conjuction with the io.circe.Printer option of dropNullValues = true we have the final output to the item 1 bellow:
+Using it in conjunction with the io.circe.Printer option of dropNullValues = true we have the final output to the item 1 bellow:
 
 ```json
 {
