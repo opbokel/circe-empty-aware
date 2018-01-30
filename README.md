@@ -41,7 +41,7 @@ But this means that now I have **one extra complexity and two ways to represent 
 **/
 ItemOptDoc("item 1", None)
 
-ItemOptDoc("item 1", Some(Documentation()))
+ItemOptDoc("item 2", Some(Documentation()))
 ```
 
 So, the simpler (and probably best) way the make it in Scala is to declare item like this, **without an optional field...**
